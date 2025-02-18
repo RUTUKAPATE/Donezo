@@ -56,9 +56,9 @@ const MobileSidebar = () => {
         {(ref) => (
           <div ref={(node) => (mobileMenuRef.current = node)} className={clsx('md:hidden w-full h-full bg-black/40 transition-all duration-700 transform ', isSidebarOpen ? "translate-x-0" : "translate-x-full")} onClick={() => closeSidebar()}>
             <div className='bg-white w-3/4 h-full'>
-              <div className='w-full flex justify-end px-5 mt-5'>
-                <button onClick={() => closeSidebar()} className='flex justify-end items-end'>
-                  <IoClose size={25} />
+              <div className='w-full flex justify-end px-5 cursor-pointer'>
+                <button onClick={() => closeSidebar()} className='flex justify-end items-end mt-5 cursor-pointer'>
+                  <IoClose size={25} className='cursor-pointer' />
                 </button>
               </div>
 
@@ -80,9 +80,9 @@ function App() {
           <Route index path='/' element={<Navigate to="/dashboard" />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/tasks' element={<Tasks />} />
-          <Route path='/completed/status' element={<Tasks />} />
-          <Route path='/im-progress/status' element={<Tasks />} />
-          <Route path='/todo/status' element={<Tasks />} />
+          <Route path='/completed/:status' element={<Tasks />} />
+          <Route path='/in-progress/:status' element={<Tasks />} />
+          <Route path='/todo/:status' element={<Tasks />} />
           <Route path='/team' element={<Users />} />
           <Route path='/trashed' element={<Trash />} />
           <Route path='/task/:id' element={<TaskDetails />} />
