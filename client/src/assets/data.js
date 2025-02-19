@@ -733,7 +733,7 @@ export const tasks = [
       },
       {
         type: "in progress",
-        activity: "Project is progress. Hiope to fin=ish soon!!",
+        activity: "Project is progress. Hope to finish soon!!",
         date: "2024-02-08T17:55:34.353Z",
         by: "65c202d4aa62f32ffd1303cc",
         _id: "65c518dce1585cfa650b79da",
@@ -801,21 +801,21 @@ export const tasks = [
         type: "started",
         activity: "Project completed!!",
         date: "2024-02-08T18:13:14.717Z",
-        by: { _id: "65c202d4aa62f32ffd1303cc", name: "Codewave" },
+        by: { _id: "65c202d4aa62f32ffd1303cc", name: "Rutuja" },
         _id: "65c51b998064dfd208b3f9",
       },
       {
         type: "commented",
         activity: "Project completed!!",
         date: "2024-02-08T18:13:14.717Z",
-        by: { _id: "65c202d4aa62f32ffd1303cc", name: "Codewave" },
+        by: { _id: "65c202d4aa62f32ffd1303cc", name: "Rutuja" },
         _id: "65c51b98064df97d208b3f9",
       },
       {
         type: "completed",
         activity: "Project completed!!",
         date: "2024-02-08T18:13:14.717Z",
-        by: { _id: "65c202d4aa62f32ffd1303cc", name: "Codewave" },
+        by: { _id: "65c202d4aa62f32ffd1303cc", name: "Rutuja" },
         _id: "65c51b998064df97d208b3f9",
       },
     ],
@@ -1113,3 +1113,51 @@ export const user = {
   "__v": 0,
   "isActive": true
 };
+
+export const activitiesData = [
+  {
+    _id: "0",
+    type: "started",
+    activity: "started this task.",
+    date: new Date("2023-01-15").toISOString(),
+    by: "Akwasi Asante",
+  },
+  {
+    _id: "1",
+    type: "commented",
+    activity:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam.",
+    date: new Date("2023-01-15").toISOString(),
+    by: "Eduardo Benz",
+  },
+  {
+    _id: "2",
+    type: "assigned",
+    activity: "task to Rutuja",
+    date: new Date("2023-01-15").toISOString(),
+    by: "Akwasi Asante",
+  },
+
+  {
+    _id: "3",
+    type: "in progress",
+    activity:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum.",
+    date: new Date("2024-01-15").toISOString(),
+    by: "Jason Meyers",
+  },
+  {
+    _id: "5",
+    type: "bug",
+    activity: "bug to Rutuja",
+    date: new Date("2023-01-15").toISOString(),
+    by: "Akwasi Asante",
+  },
+  {
+    _id: "4",
+    type: "completed",
+    activity: "Rutuja has completed the task assigned",
+    date: new Date("2023-01-15").toISOString(),
+    by: "Akwasi Asante",
+  },
+];
